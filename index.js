@@ -1,8 +1,5 @@
-const inquirer = require('inquirer')
+const CLI = require("./lib/prompts")
 
+const cli = new CLI()
 
-inquirer.prompt([{
-    type: "input",
-    name: "test",
-    message: "enter words"
-}])
+cli.run()
